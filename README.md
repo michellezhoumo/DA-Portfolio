@@ -111,5 +111,8 @@ def runKmeans(x,N,mu_ini):
     return counter 
 
 ```
+Plot 2 Clusters and 4 Clusters
+
+![K-means 2 Clusters](2Clusters.png)
 
 ## 
