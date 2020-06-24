@@ -1,5 +1,6 @@
 # Weather Related Energy Consumption Forecast
 
+## Purpose
 This project uncovers the relationship between weather conditions and energy consumption through novel machine learning approaches using empirical data. 
 
 ## Tools to be Used
