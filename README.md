@@ -117,4 +117,15 @@ Plot 2 Clusters and 4 Clusters
 
 **The actual project will use kmeans from the sklearn library**
 
-## 
+## ARIMA and LSTM
+
+ARIMA is a generalized model of Autoregressive Moving Average (ARMA) that combines the Autoregressive (AR) process and Moving Average (MA) processes and builds a composite model of the time series. As acronym indicates, ARIMA (𝑝, 𝑑, 𝑞), captures the key elements of the model:
+- **AR**: Autoregression. A regression model that uses the dependencies between an observation
+and a number of lagged observations (𝑝).
+- **I**: Integrated.To make the time series stationary by measuring the differences of observations
+at different time (𝑑).
+- **MA**: Moving Average. An approach that takes into accounts the dependency between
+observations and the residual error terms when a moving average model is used to the lagged observations (𝑞).
+
+
+![ARIMA Algorithm]（ARIMA.png）
