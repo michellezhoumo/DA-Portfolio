@@ -127,5 +127,5 @@ at different time (𝑑).
 - **MA**: Moving Average. An approach that takes into accounts the dependency between
 observations and the residual error terms when a moving average model is used to the lagged observations (𝑞).
 
+![K-means 2 Clusters](ARIMA.png)
 
-![ARIMAAlgorithm]（ARIMA.png）
