@@ -115,4 +115,6 @@ Plot 2 Clusters and 4 Clusters
 
 ![K-means 2 Clusters](2Clusters.png)![K-means 4 Clusters](4Clusters.png)
 
+**The actual project will use kmeans from the sklearn library**
+
 ## 
