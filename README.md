@@ -111,4 +111,5 @@ def runKmeans(x,N,mu_ini):
     return counter 
 
 ```
+
 ## 
