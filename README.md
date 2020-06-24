@@ -7,9 +7,9 @@ This project uncovers the relationship between weather conditions and energy con
 Starting with using K-means to cluster the types of weather conditions as a way to reduce the regressor dimension in the subsequent models, 
 the preprocessed electricity usage data are then trained using ARIMA and LSTM.
 
-### K-means
+### Illustration of K-means Model
 
-To illustrate the concept of kmeans, I wrote the model using raw data from kmeans.csv
+To illustrate the concept of kmeans, import and preprocess raw data from kmeans.csv
 
 ```python
 import pandas as pd
