@@ -139,3 +139,5 @@ observations and the residual error terms when a moving average model is used to
 LSTM is a kind of Recurrent Neural Network (RNN) with the capability of remembering the values from earlier stages for the purpose of future use.It is a special kind of RNNs with additional features to memorize the sequence of data. The memorization of the earlier trend of the data is possible through some gates along with a memory line incorporated in a typical LSTM.
 
 ![LSTMAlgorithm](LSTM.png)
+
+## The End
