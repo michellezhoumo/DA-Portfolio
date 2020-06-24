@@ -113,7 +113,9 @@ def runKmeans(x,N,mu_ini):
 ```
 Plot 2 Clusters and 4 Clusters
 
-![K-means 2 Clusters](2Clusters.png)![K-means 4 Clusters](4Clusters.png)
+2 Clusters             |  4 Clusters
+:-------------------------:|:-------------------------:
+![K-means 2 Clusters](2Clusters.png)  |  ![K-means 4 Clusters](4Clusters.png)
 
 **The actual project will use kmeans from the sklearn library**
 
@@ -129,7 +131,7 @@ at different time (𝑑).
 - **MA**: Moving Average. An approach that takes into accounts the dependency between
 observations and the residual error terms when a moving average model is used to the lagged observations (𝑞).
 
-![K-means 2 Clusters](ARIMA.png)
+![ARIMAAlgorithm](ARIMA.png)
 
 ### LSTM
 
