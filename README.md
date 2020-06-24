@@ -128,4 +128,4 @@ at different time (𝑑).
 observations and the residual error terms when a moving average model is used to the lagged observations (𝑞).
 
 
-![ARIMA Algorithm]（ARIMA.png）
+![ARIMAAlgorithm]（ARIMA.png）
