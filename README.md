@@ -119,6 +119,8 @@ Plot 2 Clusters and 4 Clusters
 
 ## ARIMA and LSTM
 
+### ARIMA
+
 ARIMA is a generalized model of Autoregressive Moving Average (ARMA) that combines the Autoregressive (AR) process and Moving Average (MA) processes and builds a composite model of the time series. As acronym indicates, ARIMA (𝑝, 𝑑, 𝑞), captures the key elements of the model:
 - **AR**: Autoregression. A regression model that uses the dependencies between an observation
 and a number of lagged observations (𝑝).
@@ -129,3 +131,9 @@ observations and the residual error terms when a moving average model is used to
 
 ![K-means 2 Clusters](ARIMA.png)
 
+### LSTM
+
+LSTM is a kind of Recurrent Neural Network (RNN) with the capability of remembering the values from earlier stages for the purpose of future use.It is a special kind of RNNs with additional features to memorize the sequence of data. The memorization of the earlier trend of the data is possible through some gates along with a memory line incorporated in a typical LSTM.
+
+![K-means 2 Clusters](LSTM.png)
+- **I**: Integrated.To make the time series stationary by measuring the differences of observations
