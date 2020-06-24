@@ -1,4 +1,4 @@
-# Weather related energy consumption forecast
+# Weather Related Energy Consumption Forecast
 
 This project uncovers the relationship between weather conditions and energy consumption through novel machine learning approaches using empirical data. 
 
@@ -7,7 +7,7 @@ This project uncovers the relationship between weather conditions and energy con
 Starting with using K-means to cluster the types of weather conditions as a way to reduce the regressor dimension in the subsequent models, 
 the preprocessed electricity usage data are then trained using ARIMA and LSTM.
 
-### Illustration of K-means Model
+### Illustration of K-means Model on 2D Data
 
 To illustrate the concept of kmeans, import and preprocess raw data from kmeans.csv
 
@@ -69,5 +69,46 @@ def kmeans(mu, x):
     return C
 
 ```
+Define cost function to determining convergence of k-means (find the number of iterations N)
 
+```python
+def costFunc(mu_k,x):
+    D = []  
+    for x_i in x:
+        euc_Distance = sum([pow((x_ik - mu_ik),2) for x_ik, mu_ik in zip(x_i, mu_k)])
+        D.append(euc_Distance)
+    J = sum(D)
+    return J
+    
+```
+Plot the k clusters given the current mu value, update mu value for the next iteration 
+num of iterations -> uses 1 initial mu and N-1 calculated mu
+
+```python
+def runKmeans(x,N,mu_ini):
+    mu = mu_ini
+    counter = 0
+    while counter < N:
+        C = kmeans(mu,x)
+        # Plot current mu with cross
+        # Uncomment plt.figure to show figures from each iterations
+        # Comment plt.figure, first and last figures shown
+        plt.figure()
+        for i in range(len(mu)):
+            plt.plot(np.array(mu[i])[0],np.array(mu[i])[1],marker='X',markersize = 14,\
+            markeredgecolor = 'white',markeredgewidth = 2.5)
+            #Plot the k clusters of x
+            plt.scatter(np.array(C[i])[:,0],np.array(C[i])[:,1])
+        
+        # Update mu value for next iteration
+        total_cost = sum([costFunc(mu[k],C[k]) for k in range(len(mu))])
+        print(total_cost)
+        mu = [list(np.average(C[k],axis = 0)) for k in range(len(mu))]
+        #total_cost = sum([costFunc(mu[k],C[k]) for k in range(len(mu))])
+        #print(total_cost)
+        # Update Counter
+        counter +=1
+    return counter 
+
+```
 ## 
